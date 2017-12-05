@@ -4,7 +4,8 @@
     {
         protected function Index()
         {
-            echo 'HOME/INDEX';
+            $viewmodal = new HomeModel();
+            $this->returnView($viewmodal->Index(),true);
         }
     }
 

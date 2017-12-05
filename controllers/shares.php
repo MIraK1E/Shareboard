@@ -4,7 +4,8 @@
     {
         protected function Index()
         {
-            echo 'SHARES/INDEX';
+            $viewmodal = new ShareModel();
+            $this->returnView($viewmodal->Index(),true);
         }
     }
 
