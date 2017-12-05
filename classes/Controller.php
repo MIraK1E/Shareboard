@@ -21,7 +21,7 @@
             $view = 'views/'.get_class($this).'/'.$this->action.'.php';
             if($fullview)
             {
-                require('view/main.php');
+                require('views/main.php');
             }
             else
             {
