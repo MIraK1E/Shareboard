@@ -1,7 +1,10 @@
 <?php
+//start Session
+    session_start();
 
     require('config.php');
 
+    require('classes/Messages.php');
     require('classes/Route.php');
     require('classes/Controller.php');
     require('classes/Model.php');

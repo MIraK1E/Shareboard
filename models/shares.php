@@ -16,6 +16,11 @@
 
             if($post['submit'])
             {
+                if($post['title'] == '' || $post['body'] == '' || $post['link'])
+                {
+                    Messages::setMsg('Please Fill In All Field', 'error');
+                    return;
+                }
                 //Insert into MySQL
                 $this->query('INSERT INTO shares (title, body, link, user_id) VALUES (:title, :body, :link, :user_id)');
                 $this->bind(':title',$post['title']);

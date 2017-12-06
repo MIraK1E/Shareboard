@@ -7,8 +7,12 @@
         <div class="form-group">
             <label>Share Title</label>
             <input type="text" name="title" class="form-control">
+        </div>
+        <div class="form-group">
             <label>Body</label>
             <textarea name="body" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
             <label>Link</label>
             <input type="text" name="link" class="form-control">
         </div>
