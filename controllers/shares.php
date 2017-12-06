@@ -10,6 +10,10 @@
 
         protected function add()
         {
+            if(!isset($_SESSION['is_logged_in']))
+            {
+                header('Location:'.ROOT_URL.'shares');
+            }
             $viewmodal = new ShareModel();
             $this->returnView($viewmodal->add(),true);
         }
